@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color secondaryColor = Color(0xFFE8F946);
-  static const Color headingColor = Color(0xFF2A0A4D);
-  static const Color labelColor = Color(0xFF1A1919);
-  static const Color textColor = Color(0xFF5C666F);
-  static const Color btntextColor = Color(0xFFFFFFFE);
+  static const Color buttonBackground = Color(0xFF80CC28);
+  static const Color arrowIcon = Color(0xFF022E57);
+  static const Color whiteBackground = Color(0xFFFFFFFF);
+
+  static const Color textFieldBorder = Color(0xFF549FCC);
+  static const Color textFieldHint = Color(0xFFBCBCBC);
+  static const Color backgroundColor = Color(0xFFDDF5E8);
 }

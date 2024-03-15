@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:park_connect/src/widgets/customButton.dart';
+import 'package:park_connect/src/screens/login.dart';
+import 'package:park_connect/src/widgets/common/customButton.dart';
+import 'package:park_connect/src/widgets/common/customInputField.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +18,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-          child: CustomButton(
-            hintText: 'i am button',
-          ),
+          child: Login(), // Removed semicolon here
         ),
       ),
     );
