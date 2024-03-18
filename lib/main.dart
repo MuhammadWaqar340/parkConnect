@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:park_connect/src/screens/login.dart';
-import 'package:park_connect/src/widgets/common/customButton.dart';
-import 'package:park_connect/src/widgets/common/customInputField.dart';
+import 'package:park_connect/src/screens/signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness:
+          Brightness.dark, // Change to Brightness.light for dark icons
+    ));
     return MaterialApp(
       title: 'ParkConnect',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-          child: Login(), // Removed semicolon here
+          child: SignUp(),
         ),
       ),
     );

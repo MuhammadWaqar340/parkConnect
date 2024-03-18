@@ -4,7 +4,7 @@ import 'package:park_connect/src/constants/color.dart';
 
 class CustomButton extends StatelessWidget {
   final String hintText;
-  const CustomButton({Key? key, required this.hintText}) : super(key: key);
+  const CustomButton({super.key, required this.hintText});
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +27,10 @@ class CustomButton extends StatelessWidget {
               children: [
                 Expanded(
                   child: TextButton(
-                    onPressed: () {
-                      // Add any action you want when the button is pressed
-                    },
+                    onPressed: () {},
                     child: Text(
                       hintText,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: AppColors.whiteBackground,
                           fontSize: 18,
                           fontWeight: FontWeight.w500),
@@ -52,9 +50,7 @@ class CustomButton extends StatelessWidget {
                     size: 25,
                     color: AppColors.arrowIcon,
                   ),
-                  onPressed: () {
-                    // Action when the forward arrow button is pressed
-                  },
+                  onPressed: () {},
                 ),
               ],
             ),

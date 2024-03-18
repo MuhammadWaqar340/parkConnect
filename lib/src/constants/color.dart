@@ -7,5 +7,5 @@ class AppColors {
 
   static const Color textFieldBorder = Color(0xFF549FCC);
   static const Color textFieldHint = Color(0xFFBCBCBC);
-  static const Color backgroundColor = Color(0xFFDDF5E8);
+  static const Color backgroundColor = Color.fromARGB(255, 226, 248, 236);
 }
