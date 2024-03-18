@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:park_connect/src/screens/login.dart';
+import 'package:park_connect/src/screens/see.dart';
 import 'package:park_connect/src/screens/signup.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-          child: SignUp(),
+          child: Login(),
         ),
       ),
     );
